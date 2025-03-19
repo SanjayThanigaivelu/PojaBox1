@@ -468,3 +468,80 @@ position: absolute;
    position: relative;
    left: 50%;
 }
+/*-----------------------------------------Footer-------------------------------------------------------------------------------------------------- */
+
+.footer {
+  background-color: #f8b6b6;
+  color: white;
+  padding: 30px 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.brand h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.social-buttons {
+  margin-top: 10px;
+}
+
+.social-btn {
+  background: none;
+  border: 1px solid white;
+  padding: 8px 15px;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-buttons img {
+  width: 150px;
+  margin: 10px;
+}
+
+.company-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
