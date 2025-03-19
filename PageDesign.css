@@ -1,0 +1,470 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    height: 100vh;
+    overflow-x: hidden;
+   background-color: white;
+   font-family: Lato, sans-serif;
+   position: relative;
+   
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;  
+}
+
+
+
+.TotalContainer{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    box-sizing: border-box; 
+}
+
+.FirstHeading{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+  background-color: #e85992; 
+  padding: 3px;
+  display: flex;
+  justify-content: center; 
+  letter-spacing: 2px;
+  font-size: 13px;
+   
+}
+/*----------------------------------------RIBBON STARTS --------------------------------------------- */
+.Ribbon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: black;
+    width: 100%; 
+    padding: 5px;
+    padding-top: 45px;
+    padding-left: 30px;
+}
+.Logo{
+    width: 110px;  
+}
+
+
+.shop{
+   padding: 10px;
+  margin-left: 20px;
+ color: #5e5e5e;
+ font-size: 14px;
+}
+.ChevronDown{
+    padding-top: 15px;
+}
+.HomeDecor{
+    padding: 10px;
+    color: #5e5e5e;
+    font-size: 14px;
+}
+.Festive{
+    padding: 20px;
+    margin-top: 4px;
+    color: #5e5e5e;
+    font-size: 14px; 
+    text-decoration: none;
+}
+.shop:hover, 
+.Festive:hover, 
+.HomeDecor:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.icon{
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    justify-content: flex-end;
+    position:absolute;
+    right: 8%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.icon i {
+    font-size: 24px; 
+  
+    
+}
+.icon p{
+    font-size: 8px;
+    color:#5e5e5e;
+    cursor: pointer;
+}
+.HeartUpper{
+    position: absolute;
+    top: -5px;
+    right: 40px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PersonIcon i{
+    margin-left: 8px;
+    
+}
+
+/*--------------------------------------RIBBON END------------------------------------------------------- */
+
+.Video{
+    width: 98.9vw;
+   margin: 0;
+   display: inline-block;
+
+
+   
+}
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:#e85992;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    text-decoration: none;
+  }
+
+  .whatsapp-icon i{
+    color: white;
+    text-decoration: none !important;
+  }
+/*-------------------------------------SLIDER PICTURES STARTS-------------------------------------------------*/
+  .slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    left: 60px;
+   padding: 20px;   
+}
+
+.slider-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    
+    z-index: 20px;
+    
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    width: max-content;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+  gap: 5px;
+}
+
+.slide-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+ 
+}
+
+.chevron {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    top: 170%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    color:#5e5e5e ;
+    outline: none;
+}
+
+.left{
+    left: 25px;
+border: none !important;
+outline: none !important;
+}
+
+.right {
+    right: 5px;
+    border: none !important;
+    outline: none !important;
+}
+.left:hover,
+.right:hover{
+    border: none !important;
+    outline: none !important;
+    background:none;
+    color:#e85992;
+}
+/*------------------------------------GRID STARTS----------------------------------------------------------------*/
+.gallery-container {
+    width: 100%;
+    padding: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  
+  .image-row {
+    margin-bottom: 30px;
+  }
+  
+  /* Row header for title and View All button */
+  .row-header {
+    display: flex;
+    justify-content: space-between; /* Push "View All" to the right */
+    align-items: center;
+    margin-bottom: 15px;
+    
+  
+  }
+  
+  .row-title {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    font-style: italic ;
+    color: black;
+  }
+ 
+  
+  .view-all {
+    padding: 8px 12px;
+    background-color: #d3134f;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .view-all:hover {
+    background-color: #d3134f;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .image-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    
+  }
+  
+  .image-caption {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    color:#292929;
+  }
+  
+  .add-to-cart {
+    padding: 5px 12px;
+    background-color: #d3134f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 175px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #d3134f;
+  }
+  /*------------------------------------------GOOGLE AND REVIEW BUTTON--------------------------------------------------------------*/
+
+  .PowerdByGoogle{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between; /* Push elements apart */
+    align-items: center; /* Center vertically */
+    padding: 10px; 
+  }
+
+.Google{
+    width: 200px;
+    height: 70px;
+    padding-left: 50px;
+}
+.review07{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: end;
+   position: relative !important;
+   bottom: 10px;
+   padding: 15px;
+   background-color: #e85992;
+   border-radius: 50px;
+   border: 1px solid white;
+   color: white;
+   height: 20px;
+}
+  
+.review-slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+
+  .comments{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .image-container img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+  }
+  
+  .image-container .hidden {
+    display: none;
+  }
+  
+  .chevron1 {
+    position: absolute;  /* Fix the position */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Ensure buttons are above images */
+    border-radius: 100px;
+
+  }
+  
+  .chevron1.left1 {
+    left: 10px;  
+
+    color: #292929;
+  
+    
+  }
+  
+  .chevron1.right1 {
+    color: #292929;
+    right: 10px;  
+
+  }
+  
+  .chevron1.right1:hover,.chevron1.left1:hover{
+    background-color: black;
+    color: white;
+  }
+  
+  .dots {
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+
+    margin-top: 150px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: black;
+  }
+  /*--------------------------------------PARAGRAPH-----------------------------------------------------------------------------*/
+
+  .About{
+    display: block;
+    padding: 30px;
+   
+  }
+  .ParaHeading, .HindiParaHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .AboutPara{
+    text-decoration: none;
+    padding: 15px;
+    font-weight: normal;
+    word-spacing: 5px;
+    line-height: 25px;
+    font-size: small;
+    color: #5e5e5e;
+    margin-top: 0px;
+
+  }
+  .subHeading{
+    color: #5e5e5e ;
+    margin-bottom: 0px;
+    padding-left: 15px;
+  }
+  .ExpandableContent {
+    display: none;
+}
+
+#toggleButton {
+    margin-top: 10px;
+    cursor: pointer;
+    color:#e85992;
+    border: none;
+    padding: 5px 10px;
+    background-color: white;
+   position: relative;
+   left: 50%;
+}
