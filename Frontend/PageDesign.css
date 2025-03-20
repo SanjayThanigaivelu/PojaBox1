@@ -112,7 +112,7 @@ html,body{
     position: absolute;
     top: -5px;
     right: 40px;
-    background-color: red;
+    background-color:#d41751;
     color: white;
     border-radius: 50%;
     font-size: 12px;
@@ -488,6 +488,7 @@ position: absolute;
   flex: 1;
   min-width: 250px;
   margin: 10px;
+line-height: 2.0;
 }
 
 .footer-section h3 {
@@ -517,6 +518,7 @@ position: absolute;
 
 .social-buttons {
   margin-top: 10px;
+  margin-left:25px;
 }
 
 .social-btn {
@@ -526,6 +528,7 @@ position: absolute;
   margin-right: 10px;
   color: white;
   cursor: pointer;
+  
 }
 
 .footer-bottom {
@@ -537,11 +540,1326 @@ position: absolute;
 }
 
 .download-buttons img {
-  width: 150px;
+  width: 100px;
   margin: 10px;
+ position: relative;
+ top: 50px;
+right: 460px;
 }
 
 .company-name {
   font-weight: bold;
   margin-top: 10px;
+}
+.BigLogo{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  bottom: 20px;
+  left: 50px;
+}
+.Rights{
+  position: relative;
+ display: flex;
+ align-items: end;
+ justify-content: end;
+ left: 30%;
+ bottom: 18px;
+}
+.company-name{
+  position: relative;
+  right: 18%;
+}
+
+
+
+/*--------------------------------------------RESPONSIVENESS---------------------------------------------------------------------------------*/
+
+@media only screen and (max-width:375px){
+
+  .Hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+left: -100px;
+ 
+}
+.shop,.HomeDecor,.Festive{
+  display: none;
+}
+
+.Logo{
+ position: relative;
+ left: 15%;
+ width: 90px;
+ bottom: 15px;
+}
+
+.menu-box {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  background: white;
+  border: 1px solid gray;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  border-radius: 5px;
+  z-index: 1000000;
+}
+
+.icon{
+  display: flex;
+  gap: 5px;
+  align-items: end;
+  justify-content: flex-end;
+  position:absolute;
+  right: 4%;
+  margin-top:-2px;
+  cursor: pointer;
+}
+.icon i{
+  font-size: 12px;
+}
+
+.icon p{
+  font-size: 7px;
+  color:#5e5e5e;
+  cursor: pointer;
+}
+
+.Festive1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color:#5e5e5e;
+  padding: 5px;
+  cursor: pointer !important;
+  text-decoration: none;
+}
+.shop1,.HomeDecor1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+  color:#5e5e5e;
+  cursor: pointer;
+}
+.HomeDecor1{
+  cursor: pointer;
+}
+
+.ChevronDown{
+  padding-top: 15px;
+}
+.shop1:hover,.HomeDecor1:hover{
+  text-decoration: underline !important;
+  color:#5e5e5e;
+  cursor: pointer !important;
+}
+
+
+a.Festive1:hover{
+  text-decoration: underline !important;
+  color:#5e5e5e;
+  cursor:  pointer !important;
+  pointer-events: auto !important;
+
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+margin-right: 100px;
+ padding: 20px;
+ overflow: hidden;   
+}
+
+.slider-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content:flex-start;
+  z-index: 20px;
+  position: relative;
+  right: 50px;
+}
+
+.slider {
+  display: flex;
+  width: max-content;
+transition: transform 0.5s ease-in-out;
+position: relative;
+ 
+}
+
+.slide-image {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+
+}
+.chevron {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position:absolute;
+top: 65%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  color:#5e5e5e ;
+  outline: none;
+}
+
+.left{
+  left: 25px;
+border: none !important;
+outline: none !important;
+
+}
+
+.right {
+  right: 5px;
+  border: none !important;
+  outline: none !important;
+}
+.left:hover,
+.right:hover{
+  border: none !important;
+  outline: none !important;
+  background:none;
+  color:#e85992;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  
+}
+
+.review07{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  position: relative !important;
+  bottom: 10px;
+  padding: 5px;
+  background-color: #e85992;
+  border-radius: 50px;
+  border: 1px solid white;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-size: small;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  
+      margin-top: 80px;
+    }
+
+    .dot {
+      width: 5px;
+      height: 5px;
+      margin: 5px;
+      background-color: gray;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #toggleButton {
+      margin-top: 10px;
+      cursor: pointer;
+      color:#e85992;
+      border: none;
+      padding: 5px 10px;
+      background-color: white;
+     position: relative;
+     left: 30%;
+  }
+
+  .Rights{
+    position: relative;
+   display: flex;
+   align-items: end;
+   justify-content: end;
+ top: 20px;
+left: -60px;
+  }
+}
+
+@media only screen and (min-width:376px) and (max-width:450px){
+
+  .Hamburger {
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+left: -100px;
+ 
+}
+.shop,.HomeDecor,.Festive{
+  display: none;
+}
+
+.Logo{
+ position: relative;
+ left: 18%;
+ width: 100px;
+ bottom: 15px;
+}
+
+.menu-box {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  background: white;
+  border: 1px solid gray;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  border-radius: 5px;
+  z-index: 100000;
+}
+
+.icon{
+  display: flex;
+  gap: 5px;
+  align-items: end;
+  justify-content: flex-end;
+  position:absolute;
+  right: 4%;
+  margin-top:-2px;
+  cursor: pointer;
+}
+.icon i{
+  font-size: 15px;
+}
+
+.icon p{
+  font-size: 8px;
+  color:#5e5e5e;
+  cursor: pointer;
+}
+
+.Festive1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color:#5e5e5e;
+  padding: 5px;
+  cursor: pointer !important;
+  text-decoration: none;
+}
+.shop1,.HomeDecor1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+  color:#5e5e5e;
+  cursor: pointer;
+}
+.HomeDecor1{
+  cursor: pointer;
+}
+
+.ChevronDown{
+  padding-top: 15px;
+}
+.shop1:hover,.HomeDecor1:hover{
+  text-decoration: underline !important;
+  color:#5e5e5e;
+  cursor: pointer !important;
+}
+
+
+a.Festive1:hover{
+
+  text-decoration: underline !important;
+  color:#5e5e5e;
+  cursor:  pointer !important;
+
+
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+margin-right: 100px;
+ padding: 20px;
+ overflow: hidden;   
+}
+
+.slider-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content:flex-start;
+  z-index: 20px;
+  position: relative;
+  right: 50px;
+}
+
+.slider {
+  display: flex;
+  width: max-content;
+transition: transform 0.5s ease-in-out;
+position: relative;
+ 
+}
+
+.slide-image {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+
+}
+.chevron {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position:absolute;
+top: 75%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  color:#5e5e5e ;
+  outline: none;
+}
+
+.left{
+  left: 25px;
+border: none !important;
+outline: none !important;
+
+}
+
+.right {
+  right: 5px;
+  border: none !important;
+  outline: none !important;
+}
+.left:hover,
+.right:hover{
+  border: none !important;
+  outline: none !important;
+  background:none;
+  color:#e85992;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  
+}
+
+.review07{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  position: relative !important;
+  bottom: 10px;
+  padding: 5px;
+  background-color: #e85992;
+  border-radius: 50px;
+  border: 1px solid white;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-size: small;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  
+      margin-top: 80px;
+    }
+
+    .dot {
+      width: 5px;
+      height: 5px;
+      margin: 5px;
+      background-color: gray;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #toggleButton {
+      margin-top: 10px;
+      cursor: pointer;
+      color:#e85992;
+      border: none;
+      padding: 5px 10px;
+      background-color: white;
+     position: relative;
+     left: 30%;
+  }
+
+  .Rights{
+    position: relative;
+   display: flex;
+   align-items: end;
+   justify-content: end;
+ top: 20px;
+left: -60px;
+  }
+
+}
+
+@media only screen and (min-width:451px) and (max-width:600px){
+
+  .Hamburger {
+    font-size: 34px;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+left: -100px;
+ 
+}
+.shop,.HomeDecor,.Festive{
+  display: none;
+}
+
+.Logo{
+ position: relative;
+ left: 22%;
+ width: 110px;
+ bottom: 15px;
+}
+
+.menu-box {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  background: white;
+  border: 1px solid gray;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 250px;
+
+  border-radius: 5px;
+  z-index: 100000;
+}
+
+.icon{
+  display: flex;
+  gap: 5px;
+  align-items: end;
+  justify-content: flex-end;
+  position:absolute;
+  right: 4%;
+  margin-top:-2px;
+  cursor: pointer;
+}
+.icon i{
+  font-size: 16px;
+}
+
+.icon p{
+  font-size: 8px;
+  color:#5e5e5e;
+  cursor: pointer;
+}
+
+.Festive1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color:#5e5e5e;
+  padding: 5px;
+  cursor: pointer !important;
+  text-decoration: none;
+}
+.shop1,.HomeDecor1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+  color:#5e5e5e;
+  cursor: pointer;
+}
+.HomeDecor1{
+  cursor: pointer;
+}
+
+.ChevronDown{
+  padding-top: 15px;
+}
+.shop1:hover,.HomeDecor1:hover{
+  text-decoration: underline !important;
+  color:#5e5e5e;
+  cursor: pointer !important;
+}
+
+
+a.Festive1:hover{
+
+  text-decoration: underline !important;
+  color:#5e5e5e;
+  cursor:  pointer !important;
+
+
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+margin-right: 100px;
+ padding: 20px;
+ overflow: hidden;   
+}
+
+.slider-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content:flex-start;
+  z-index: 20px;
+  position: relative;
+  right: 50px;
+}
+
+.slider {
+  display: flex;
+  width: max-content;
+transition: transform 0.5s ease-in-out;
+position: relative;
+ 
+}
+
+.slide-image {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+
+}
+.chevron {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position:absolute;
+top: 82%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  color:#5e5e5e ;
+  outline: none;
+}
+
+.left{
+  left: 25px;
+border: none !important;
+outline: none !important;
+
+}
+
+.right {
+  right: 15px;
+  border: none !important;
+  outline: none !important;
+}
+.left:hover,
+.right:hover{
+  border: none !important;
+  outline: none !important;
+  background:none;
+  color:#e85992;
+}
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 10px;
+}
+.gallery-image {
+  width: 330px;
+  height: 345px;
+  object-fit: cover;
+  
+}
+
+.review07{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  position: relative !important;
+  bottom: 10px;
+  padding: 5px;
+  background-color: #e85992;
+  border-radius: 50px;
+  border: 1px solid white;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-size: small;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  
+      margin-top: 80px;
+    }
+
+    .dot {
+      width: 5px;
+      height: 5px;
+      margin: 5px;
+      background-color: gray;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #toggleButton {
+      margin-top: 10px;
+      cursor: pointer;
+      color:#e85992;
+      border: none;
+      padding: 5px 10px;
+      background-color: white;
+     position: relative;
+     left: 40%;
+  }
+
+  .Rights{
+    position: relative;
+   display: flex;
+   align-items: end;
+   justify-content: end;
+ top: 20px;
+left: -80px;
+  }
+  .BigLogo{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 20px;
+    left: 0px;
+  
+  }
+  .social-buttons{
+    position: relative;
+    right: 30px;
+  }
+
+}
+
+
+@media only screen and (min-width:510px) and (max-width:600px){
+
+  .chevron {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+  top: 88%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    color:#5e5e5e ;
+    outline: none;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:700px){
+
+  .Hamburger {
+    font-size: 34px;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+left: -100px;
+ 
+}
+.shop,.HomeDecor,.Festive{
+  display: none;
+}
+
+.Logo{
+ position: relative;
+ left: 22%;
+ width: 110px;
+ bottom: 15px;
+}
+
+.menu-box {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  background: white;
+  border: 1px solid gray;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 250px;
+
+  border-radius: 5px;
+  z-index: 100000;
+}
+
+.icon{
+  display: flex;
+  gap: 5px;
+  align-items: end;
+  justify-content: flex-end;
+  position:absolute;
+  right: 4%;
+  margin-top:-2px;
+  cursor: pointer;
+}
+.icon i{
+  font-size: 16px;
+}
+
+.icon p{
+  font-size: 8px;
+  color:#5e5e5e;
+  cursor: pointer;
+}
+
+.Festive1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color:#5e5e5e;
+  padding: 5px;
+  cursor: pointer !important;
+  text-decoration: none;
+}
+.shop1,.HomeDecor1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+  color:#5e5e5e;
+  cursor: pointer;
+}
+.HomeDecor1{
+  cursor: pointer;
+}
+
+.ChevronDown{
+  padding-top: 15px;
+}
+.shop1:hover,.HomeDecor1:hover{
+  text-decoration: underline !important;
+  color:#5e5e5e;
+  cursor: pointer !important;
+}
+
+
+a.Festive1:hover{
+
+  text-decoration: underline !important;
+  color:#5e5e5e;
+  cursor:  pointer !important;
+
+
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+margin-right: 100px;
+ padding: 20px;
+ overflow: hidden;   
+}
+
+.slider-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content:flex-start;
+  z-index: 20px;
+  position: relative;
+  right: 50px;
+}
+
+.slider {
+  display: flex;
+  width: max-content;
+transition: transform 0.5s ease-in-out;
+position: relative;
+ 
+}
+
+.slide-image {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+
+}
+.chevron {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position:absolute;
+top: 82%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  color:#5e5e5e ;
+  outline: none;
+}
+
+.left{
+  left: 25px;
+border: none !important;
+outline: none !important;
+
+}
+
+.right {
+  right: 15px;
+  border: none !important;
+  outline: none !important;
+}
+.left:hover,
+.right:hover{
+  border: none !important;
+  outline: none !important;
+  background:none;
+  color:#e85992;
+}
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 10px;
+}
+.gallery-image {
+  width: 330px;
+  height: 345px;
+  object-fit: cover;
+  
+}
+
+.review07{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  position: relative !important;
+  bottom: 10px;
+  padding: 5px;
+  background-color: #e85992;
+  border-radius: 50px;
+  border: 1px solid white;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-size: small;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  
+      margin-top: 80px;
+    }
+
+    .dot {
+      width: 5px;
+      height: 5px;
+      margin: 5px;
+      background-color: gray;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #toggleButton {
+      margin-top: 10px;
+      cursor: pointer;
+      color:#e85992;
+      border: none;
+      padding: 5px 10px;
+      background-color: white;
+     position: relative;
+     left: 40%;
+  }
+
+  .Rights{
+    position: relative;
+   display: flex;
+   align-items: end;
+   justify-content: end;
+ top: 20px;
+left: -80px;
+  }
+  .BigLogo{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 20px;
+    left: 0px;
+  
+  }
+  .social-buttons{
+    position: relative;
+    right: 30px;
+  }
+
+}
+
+
+@media only screen and (min-width:701px) and (max-width:900px){
+
+  .Hamburger {
+    font-size: 36px;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+ left: -100px;
+ 
+}
+.shop,.HomeDecor,.Festive{
+  display: none;
+}
+
+.Logo{
+ position: relative;
+ left: 22%;
+ width: 150px;
+ bottom: 15px;
+}
+
+.menu-box {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  background: white;
+  border: 1px solid gray;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 250px;
+
+  border-radius: 5px;
+  z-index: 100000;
+}
+
+.icon{
+  display: flex;
+  gap: 15px;
+  align-items: end;
+  justify-content: flex-end;
+  position:absolute;
+  right: 6%;
+  margin-top:-2px;
+  cursor: pointer;
+}
+.icon i{
+  font-size: 22px;
+}
+
+.icon p{
+  font-size: 12px;
+  color:#5e5e5e;
+  cursor: pointer;
+}
+
+.Festive1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color:#5e5e5e;
+  padding: 5px;
+  cursor: pointer !important;
+  text-decoration: none;
+}
+
+.HeartUpper{
+  position: absolute;
+  top: -5px;
+  right: 70px;
+  background-color:#d41751;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop1,.HomeDecor1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+  color:#5e5e5e;
+  cursor: pointer;
+}
+.HomeDecor1{
+  cursor: pointer;
+}
+
+.ChevronDown{
+  padding-top: 15px;
+}
+.shop1:hover,.HomeDecor1:hover{
+  text-decoration: underline !important;
+  color:#5e5e5e;
+  cursor: pointer !important;
+}
+
+
+a.Festive1:hover{
+
+  text-decoration: underline !important;
+  color:#5e5e5e;
+  cursor:  pointer !important;
+
+
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+margin-right: 100px;
+ padding: 20px;
+ overflow: hidden;   
+}
+
+.slider-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content:flex-start;
+  z-index: 20px;
+  position: relative;
+  right: 50px;
+}
+
+.slider {
+  display: flex;
+  width: max-content;
+transition: transform 0.5s ease-in-out;
+position: relative;
+ 
+}
+
+.slide-image {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+
+}
+.chevron {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position:absolute;
+top: 82%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  color:#5e5e5e ;
+  outline: none;
+}
+
+.left{
+  left: 25px;
+border: none !important;
+outline: none !important;
+
+}
+
+.right {
+  right: 15px;
+  border: none !important;
+  outline: none !important;
+}
+.left:hover,
+.right:hover{
+  border: none !important;
+  outline: none !important;
+  background:none;
+  color:#e85992;
+}
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 10px;
+}
+.gallery-image {
+  width: 330px;
+  height: 345px;
+  object-fit: cover;
+  
+}
+
+.review07{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  position: relative !important;
+  bottom: 10px;
+  padding: 5px;
+  background-color: #e85992;
+  border-radius: 50px;
+  border: 1px solid white;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-size: small;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  
+      margin-top: 80px;
+    }
+
+    .dot {
+      width: 5px;
+      height: 5px;
+      margin: 5px;
+      background-color: gray;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #toggleButton {
+      margin-top: 10px;
+      cursor: pointer;
+      color:#e85992;
+      border: none;
+      padding: 5px 10px;
+      background-color: white;
+     position: relative;
+     left: 40%;
+  }
+
+  .Rights{
+    position: relative;
+   display: flex;
+   align-items: end;
+   justify-content: end;
+ top: 20px;
+left: -80px;
+  }
+  .BigLogo{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 20px;
+    left: 0px;
+  
+  }
+  .social-buttons{
+    position: relative;
+    right: 30px;
+  }
+
+}
+
+@media only screen and (min-width:601px) and (max-width:680px){
+
+  .chevron {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+  top: 98%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    color:#5e5e5e ;
+    outline: none;
+  }
+
+}
+
+@media only screen and (min-width:681px) and (max-width:800px){
+
+  .chevron {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+  top: 108%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    color:#5e5e5e ;
+    outline: none;
+  }
+
+}
+
+@media only screen and (min-width:801px) and (max-width:900px){
+
+  .chevron {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+  top: 130%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    color:#5e5e5e ;
+    outline: none;
+  }
+
+}
+
+@media only screen and (min-width:901px) and (max-width:1024px){
+
+  .Hamburger,.menu-box{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width:1025px){
+  .Hamburger,.menu-box{
+    display: none;
+  }
 }
